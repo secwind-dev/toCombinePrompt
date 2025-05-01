@@ -113,7 +113,7 @@ Extension นี้ไม่เก็บรวบรวมหรือส่ง�
 
 ---
 
-## 📸 ภาพหน้าจอการแสดงผล
+## 📸 ภาพหน้าจอแสดงผล
 
 ![Screenshot 1](images/main1.png)
 ![Screenshot 2](images/main2.png)
