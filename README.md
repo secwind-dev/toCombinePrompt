@@ -35,22 +35,6 @@
 -   📱 **ใช้งานง่าย** - อินเตอร์เฟซที่เรียบง่าย เข้าใจได้ทันที
 -   🔒 **ให้ความสำคัญกับความเป็นส่วนตัว** - ข้อมูลทั้งหมดถูกเก็บไว้ในเครื่องของคุณเท่านั้น ไม่มีการส่งข้อมูลไปยังเซิร์ฟเวอร์ใดๆ
 
-## 📥 วิธีการติดตั้ง
-
-### วิธีที่ 1: ติดตั้งจาก Chrome Web Store
-
-1. เข้าไปที่ [Chrome Web Store](https://chrome.google.com/webstore/detail/tocombineprompt/xxxxx) (ลิงก์จะพร้อมใช้งานเมื่อ Extension ถูกเผยแพร่)
-2. คลิกที่ปุ่ม "เพิ่มลงใน Chrome"
-3. ยืนยันการติดตั้ง
-
-### วิธีที่ 2: ติดตั้งในโหมดนักพัฒนา
-
-1. ดาวน์โหลดโค้ดจาก [GitHub Repository](https://github.com/yourusername/tocombineprompt) นี้
-2. แตกไฟล์ ZIP (ถ้ามี)
-3. เปิด Chrome และไปที่ `chrome://extensions/`
-4. เปิดโหมดนักพัฒนา (Developer Mode) ด้านบนขวา
-5. คลิกที่ "Load unpacked" และเลือกโฟลเดอร์ที่มีไฟล์ Extension
-
 ## 🚀 วิธีการใช้งาน
 
 1. **เปิด Extension** - คลิกที่ไอคอน toCombinePrompt บนแถบเครื่องมือของ Chrome
@@ -78,27 +62,6 @@ Extension นี้ขอสิทธิ์การเข้าถึงดั�
 
 ## 🛠️ การพัฒนา
 
-### โครงสร้างไฟล์
-
-```
-toCombinePrompt/
-├── images/              # ไอคอนและรูปภาพ
-├── popup.html          # หน้า UI หลักของ Extension
-├── popup.js            # โค้ด JavaScript สำหรับหน้า UI
-├── styles.css          # สไตล์ CSS
-├── background.js       # Service Worker
-├── manifest.json       # ไฟล์ manifest ของ Extension
-└── privacy-policy.html # นโยบายความเป็นส่วนตัว
-```
-
-### การมีส่วนร่วมในการพัฒนา
-
-1. Fork repository นี้
-2. สร้าง branch ใหม่ (`git checkout -b feature/amazing-feature`)
-3. Commit การเปลี่ยนแปลงของคุณ (`git commit -m 'Add some amazing feature'`)
-4. Push ไปยัง branch (`git push origin feature/amazing-feature`)
-5. เปิด Pull Request
-
 ## 🔒 นโยบายความเป็นส่วนตัว
 
 Extension นี้ไม่เก็บรวบรวมหรือส่งข้อมูลส่วนบุคคลใดๆ ข้อมูลทั้งหมด (Prompts และการตั้งค่า) จะถูกจัดเก็บเฉพาะในเครื่องของผู้ใช้เท่านั้น โดยใช้ Chrome Storage API
@@ -109,7 +72,7 @@ Extension นี้ไม่เก็บรวบรวมหรือส่ง�
 
 © 2025 Fast Tag - All Rights Reserved
 
-พัฒนาโดย [SecWind](mailto:secwind.dev@gmail.com)
+พัฒนาโดย [SecWind](https://github.com/secwind-dev)
 
 ---
 
