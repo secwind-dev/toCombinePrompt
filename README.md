@@ -115,10 +115,11 @@ Extension นี้ไม่เก็บรวบรวมหรือส่ง�
 
 ## 📸 ภาพหน้าจอ
 
-![Screenshot 1](images/main2.png)
+![Screenshot 1](images/main1.png)
+![Screenshot 2](images/main2.png)
 _หน้าหลักของ Extension ในโหมดภาษาไทย_
 
-![Screenshot 2](images/main3.png)
+![Screenshot 3](images/main3.png)
 _ตัวอย่างการแสดงผลของ Prompt ที่สร้างขึ้น_
 
 ## 📞 ติดต่อ
