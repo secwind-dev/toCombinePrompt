@@ -12,6 +12,7 @@
                 margin: 0 auto;
                 padding: 20px;
                 color: #333;
+                background: linear-gradient(135deg, #3498db, #9b59b6);
             }
             h1,
             h2 {
@@ -19,75 +20,181 @@
             }
             .container {
                 background-color: #f9f9f9;
+                border-radius: 12px;
+                padding: 25px;
+                box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+                margin-top: 20px;
+            }
+            .header {
+                text-align: center;
+                margin-bottom: 25px;
+            }
+            .logo {
+                width: 120px;
+                height: auto;
+                border-radius: 50%;
+                box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+                padding: 5px;
+                background: white;
+                margin: 0 auto;
+                display: block;
+            }
+            .title {
+                font-size: 28px;
+                margin: 15px 0;
+                color: #2c3e50;
+            }
+            .effective-date {
+                display: inline-block;
+                background-color: #3498db;
+                color: white;
+                padding: 5px 15px;
+                border-radius: 20px;
+                font-size: 14px;
+                margin-bottom: 20px;
+            }
+            .section {
+                background-color: white;
                 border-radius: 8px;
-                padding: 20px;
-                box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+                padding: 15px;
+                margin-bottom: 20px;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+            }
+            .section h2 {
+                border-bottom: 2px solid #3498db;
+                padding-bottom: 8px;
+                margin-top: 0;
+            }
+            ul {
+                padding-left: 25px;
+            }
+            li {
+                margin-bottom: 8px;
             }
             .footer {
                 margin-top: 30px;
                 text-align: center;
                 font-size: 14px;
-                color: #666;
+                color: white;
+                padding: 15px;
+                border-radius: 8px;
+                background-color: rgba(0, 0, 0, 0.1);
+            }
+            .social-links {
+                display: flex;
+                justify-content: center;
+                margin-top: 15px;
+                gap: 15px;
+            }
+            .social-link {
+                display: inline-block;
+                padding: 8px 12px;
+                background-color: #2c3e50;
+                color: white;
+                border-radius: 5px;
+                text-decoration: none;
+                transition: transform 0.3s, background-color 0.3s;
+            }
+            .social-link:hover {
+                background-color: #3498db;
+                transform: translateY(-3px);
+            }
+            .contact-info {
+                margin-top: 20px;
+                padding: 10px;
+                background-color: #f5f5f5;
+                border-radius: 8px;
+                font-style: italic;
             }
         </style>
     </head>
     <body>
         <div class="container">
-            <h1>นโยบายความเป็นส่วนตัว toCombinePrompt</h1>
-            <p>มีผลบังคับใช้: 1 พฤษภาคม 2025</p>
+            <div class="header">
+                <img
+                    src="./images/icon128.png"
+                    alt="toCombinePrompt Logo"
+                    class="logo"
+                />
+                <h1 class="title">นโยบายความเป็นส่วนตัว</h1>
+                <div class="effective-date">มีผลบังคับใช้: 1 พฤษภาคม 2024</div>
+            </div>
 
-            <h2>ข้อมูลที่เราเก็บรวบรวม</h2>
-            <p>
-                toCombinePrompt เป็น Chrome Extension
-                ที่ออกแบบมาให้ผู้ใช้สามารถสร้างและจัดการ Prompts สำหรับ AI
-                ได้อย่างมีประสิทธิภาพ
-                โดยเราไม่เก็บรวบรวมหรือส่งข้อมูลส่วนบุคคลใดๆ ของผู้ใช้
-                ข้อมูลทั้งหมดจะถูกจัดเก็บเฉพาะในเครื่องของผู้ใช้เท่านั้น
-            </p>
+            <div class="section">
+                <h2>ข้อมูลที่เราเก็บรวบรวม</h2>
+                <p>
+                    toCombinePrompt เป็น Chrome Extension
+                    ที่ออกแบบมาให้ผู้ใช้สามารถสร้างและจัดการ Prompts สำหรับ AI
+                    ได้อย่างมีประสิทธิภาพ
+                    โดยเราไม่เก็บรวบรวมหรือส่งข้อมูลส่วนบุคคลใดๆ ของผู้ใช้
+                    ข้อมูลทั้งหมดจะถูกจัดเก็บเฉพาะในเครื่องของผู้ใช้เท่านั้น
+                </p>
+            </div>
 
-            <h2>การจัดเก็บข้อมูลในเครื่อง</h2>
-            <p>
-                Extension
-                ของเรามีการบันทึกข้อมูลดังต่อไปนี้ภายในเครื่องของผู้ใช้ผ่าน
-                Chrome Storage API:
-            </p>
-            <ul>
-                <li>Prompts ที่ผู้ใช้สร้างและบันทึก</li>
-                <li>การตั้งค่าภาษาที่ผู้ใช้เลือก (ไทยหรืออังกฤษ)</li>
-            </ul>
-            <p>ข้อมูลเหล่านี้จะไม่ถูกส่งไปยังเซิร์ฟเวอร์หรือบุคคลที่สามใดๆ</p>
+            <div class="section">
+                <h2>การจัดเก็บข้อมูลในเครื่อง</h2>
+                <p>
+                    Extension
+                    ของเรามีการบันทึกข้อมูลดังต่อไปนี้ภายในเครื่องของผู้ใช้ผ่าน
+                    Chrome Storage API:
+                </p>
+                <ul>
+                    <li>Prompts ที่ผู้ใช้สร้างและบันทึก</li>
+                    <li>การตั้งค่าภาษาที่ผู้ใช้เลือก (ไทยหรืออังกฤษ)</li>
+                </ul>
+                <p>
+                    ข้อมูลเหล่านี้จะไม่ถูกส่งไปยังเซิร์ฟเวอร์หรือบุคคลที่สามใดๆ
+                </p>
+            </div>
 
-            <h2>สิทธิ์การเข้าถึง (Permissions)</h2>
-            <p>Extension นี้ขอสิทธิ์การเข้าถึงดังนี้:</p>
-            <ul>
-                <li>
-                    <strong>storage</strong> - เพื่อจัดเก็บ Prompts
-                    และการตั้งค่าของผู้ใช้
-                </li>
-                <li>
-                    <strong>clipboardWrite</strong> - เพื่อคัดลอก JSON และ AI
-                    Prompts ไปยังคลิปบอร์ด
-                </li>
-            </ul>
+            <div class="section">
+                <h2>สิทธิ์การเข้าถึง (Permissions)</h2>
+                <p>Extension นี้ขอสิทธิ์การเข้าถึงดังนี้:</p>
+                <ul>
+                    <li>
+                        <strong>storage</strong> - เพื่อจัดเก็บ Prompts
+                        และการตั้งค่าของผู้ใช้
+                    </li>
+                    <li>
+                        <strong>clipboardWrite</strong> - เพื่อคัดลอก JSON และ
+                        AI Prompts ไปยังคลิปบอร์ด
+                    </li>
+                </ul>
+            </div>
 
-            <h2>การปรับปรุงและอัปเดต</h2>
-            <p>
-                เมื่อมีการอัปเดต Extension
-                เราอาจมีการเพิ่มฟีเจอร์ใหม่หรือปรับปรุงการทำงาน
-                ซึ่งอาจส่งผลต่อวิธีการจัดการข้อมูล
-                หากมีการเปลี่ยนแปลงที่สำคัญเกี่ยวกับการจัดการข้อมูล
-                เราจะอัปเดตนโยบายความเป็นส่วนตัวนี้และแจ้งให้ผู้ใช้ทราบ
-            </p>
+            <div class="section">
+                <h2>การปรับปรุงและอัปเดต</h2>
+                <p>
+                    เมื่อมีการอัปเดต Extension
+                    เราอาจมีการเพิ่มฟีเจอร์ใหม่หรือปรับปรุงการทำงาน
+                    ซึ่งอาจส่งผลต่อวิธีการจัดการข้อมูล
+                    หากมีการเปลี่ยนแปลงที่สำคัญเกี่ยวกับการจัดการข้อมูล
+                    เราจะอัปเดตนโยบายความเป็นส่วนตัวนี้และแจ้งให้ผู้ใช้ทราบ
+                </p>
+            </div>
 
-            <h2>ติดต่อเรา</h2>
-            <p>
-                หากคุณมีคำถามหรือข้อกังวลเกี่ยวกับนโยบายความเป็นส่วนตัวของเรา
-                สามารถติดต่อได้ที่: secwind.dev@gmail.com
-            </p>
+            <div class="section">
+                <h2>ติดต่อเรา</h2>
+                <p>
+                    หากคุณมีคำถามหรือข้อกังวลเกี่ยวกับนโยบายความเป็นส่วนตัวของเรา
+                    สามารถติดต่อได้ที่: secwind.dev@gmail.com
+                </p>
+                <div class="contact-info">
+                    <p>ติดตามการอัปเดตและฟีเจอร์ใหม่ได้ที่:</p>
+                    <div class="social-links">
+                        <a
+                            href="https://github.com/secwind-dev/toCombinePrompt"
+                            target="_blank"
+                            class="social-link"
+                            >GitHub</a
+                        >
+                    </div>
+                </div>
+            </div>
         </div>
 
         <div class="footer">
-            <p>&copy; 2025, Fast Tag - All Rights Reserved</p>
+            <p>&copy; 2024, Fast Tag - All Rights Reserved</p>
         </div>
     </body>
 </html>
